@@ -1,0 +1,18 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Selenium_intro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "/Users/hp/Documents/Reema/chrome-win64");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com");
+		System.out.println( driver.getTitle());//get title of the url
+		System.out.println(driver.getCurrentUrl());//get the url
+		driver.close();
+		
+		
+	}
+
+}
